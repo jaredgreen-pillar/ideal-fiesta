@@ -11,7 +11,9 @@ class RabbitTask {
     val factory = ConnectionFactory()
 
     init {
-        factory.setUri("amqp://vxvbbqxq:d55teJIJN8Kz2Y7s29hpzHzYgEHnpvk-@wombat.rmq.cloudamqp.com/vxvbbqxq")
+        factory.setHost("localhost")
+//        factory.setUri("amqp://vxvbbqxq:d55teJIJN8Kz2Y7s29hpzHzYgEHnpvk-@wombat.rmq.cloudamqp.com/vxvbbqxq")
+//        factory.setPort(1883)
     }
 
     @Throws(IOException::class, TimeoutException::class)
